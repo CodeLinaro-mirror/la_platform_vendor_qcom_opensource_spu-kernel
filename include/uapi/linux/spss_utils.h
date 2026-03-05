@@ -97,7 +97,7 @@ struct spss_ioc_is_signaled {
 #define MAX_3RD_PARTY_UEFI_APPS 3
 
 /* Max number of total UEFI applications */
-#define MAX_SPU_UEFI_APPS (NUM_SPU_UEFI_APPS + MAX_3RD_PARTY_UEFI_APPS)
+#define MAX_SPU_UEFI_APPS 8
 
 /** use variable-size-array for future growth */
 struct spss_ioc_set_fw_and_apps_cmac {
