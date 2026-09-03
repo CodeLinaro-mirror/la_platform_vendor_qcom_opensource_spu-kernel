@@ -7,7 +7,7 @@ endif
 
 ifeq ($(SPU_DLKM_ENABLE),  true)
        ifneq ($(TARGET_BOARD_AUTO),true)
-               ifeq ($(call is-board-platform-in-list,sun canoe lahaina),true)
+               ifeq ($(call is-board-platform-in-list,sun canoe lahaina taro),true)
                        BOARD_VENDOR_KERNEL_MODULES += $(KERNEL_MODULES_OUT)/spcom.ko \
                                $(KERNEL_MODULES_OUT)/spss_utils.ko
                endif

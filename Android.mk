@@ -1,7 +1,6 @@
 # Android makefile for spu kernel modules (spcom.ko and spss_utils.ko)
 ifeq ($(call is-vendor-board-platform,QCOM),true)
-ifeq ($(call is-board-platform-in-list,sun canoe lahaina),true)
-
+ifeq ($(call is-board-platform-in-list,sun canoe lahaina taro),true)
 # This makefile is only for DLKM
 ifneq ($(findstring vendor,$(LOCAL_PATH)),)
 	LOCAL_PATH := $(call my-dir)
